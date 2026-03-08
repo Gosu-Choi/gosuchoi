@@ -56,8 +56,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  description: "Gosu Choi's personal homepage."
+  author: Gosu Choi
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -73,7 +73,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  images: ["images/cover.png"]
 
   profileMode:
     enabled: false
@@ -95,13 +95,13 @@ params:
 
   socialIcons:
     - name: github
-      title: View Source of his project on Github
+      title: View Source of my project on Github
       url: "https://github.com/Gosu-Choi"
     - name: LinkedIn
-      title: View his career path on LinkedIn
+      title: View my career path on LinkedIn
       url: "https://www.linkedin.com/in/gosu-choi-16bb9b208/"
     - name: Brunch
-      title: View his article on Brunch
+      title: View my article on Brunch
       url: "https://brunch.co.kr/@gosu-choi"
 
   editPost:
@@ -121,10 +121,10 @@ params:
 
   assets:
     disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
   #     safari_pinned_tab: "<link / abs url>"
 
   # cover:
