@@ -8,21 +8,18 @@ iframe {
     border-radius: var(--radius) !important;
 }
 
+.header .nav {
+    max-width: calc(var(--main-width) + (var(--gap) * 2));
+}
+
 .home-info ul {
     padding-inline-start: 20px;
 }
 
 .home-info.first-entry {
     min-height: 0;
-    margin-top: 8px;
+    margin-top: 0;
     justify-content: flex-start;
-    --home-left-shift: clamp(
-        0px,
-        calc((100vw - (var(--main-width) + (var(--gap) * 2))) / 2),
-        calc((var(--nav-width) - var(--main-width)) / 2)
-    );
-    width: calc(100% + (var(--home-left-shift) * 2));
-    margin-left: calc(-1 * var(--home-left-shift));
 }
 
 .home-avatar {
