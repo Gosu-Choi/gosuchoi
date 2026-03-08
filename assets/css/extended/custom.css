@@ -12,6 +12,31 @@ iframe {
     padding-inline-start: 20px;
 }
 
+.home-info.first-entry {
+    min-height: 0;
+    margin-top: 8px;
+    justify-content: flex-start;
+    --home-left-shift: clamp(
+        0px,
+        calc((100vw - (var(--main-width) + (var(--gap) * 2))) / 2),
+        calc((var(--nav-width) - var(--main-width)) / 2)
+    );
+    width: calc(100% + (var(--home-left-shift) * 2));
+    margin-left: calc(-1 * var(--home-left-shift));
+}
+
+.home-avatar {
+    margin: 0 0 16px;
+}
+
+.home-avatar img {
+    width: clamp(96px, 18vw, 140px);
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border);
+}
+
 .entry-cover img {
     border: 1px solid var(--border);
 }

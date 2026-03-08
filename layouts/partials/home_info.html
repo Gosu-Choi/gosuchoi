@@ -1,5 +1,11 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
+    {{- with (resources.Get "images/Gosu-Choi.jpg") }}
+    {{- $avatar := .Fit "240x240" }}
+    <figure class="home-avatar">
+        <img src="{{ $avatar.RelPermalink }}" alt="Gosu Choi" width="{{ $avatar.Width }}" height="{{ $avatar.Height }}" loading="eager" decoding="async">
+    </figure>
+    {{- end }}
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
